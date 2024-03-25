@@ -11,7 +11,7 @@
 
 ### 1. Abstract
 
-In a few sentences, describe your final project. This abstract will be used as the description in the evaluation survey forms.
+We will develop a launcher system to play 10 Cup Pong. The system will consist of DC motors which will launch the ping pong ball, servo motors which will adjust the angle of the launcher, a distance sensor / camera which will determien where the cups are, and a feedback system so the system can self adjust. We will also add an LCD screen which will talk trash to the opponents.
 
 ### 2. Motivation
 
