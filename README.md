@@ -79,12 +79,10 @@ This section is to help guide your progress over the next few weeks. Feel free t
 | **Week**            | **Task** | **Assigned To**    |
 |----------           |--------- |------------------- |
 | Week 1: 3/24 - 3/31 |    Jacob/Maor      |         Download the OpenCV platform, 3D print launcher, order parts, and get approval          |
-| Week 2: 4/1 - 4/7   |      Jacob 
-Maor|        Play with OpenCV platform on his Mac, and investigate how to use the Pi to run OpenCV and communicate with the ATMega chip 
-Use DC Motors and Servos to start controlling the launcher, fine if this is done with ATMega328PB|
-| Week 3: 4/8 - 4/14  |          |                    |
-| Week 4: 4/15 - 4/21 |          |                    |
-| Week 5: 4/22 - 4/26 |          |                    |
+| Week 2: 4/1 - 4/7   |      Jacob / Maor|        Play with OpenCV platform on his Mac, and investigate how to use the Pi to run OpenCV and communicate with the ATMega chip / Use DC Motors and Servos to start controlling the launcher, fine if this is done with ATMega328PB|
+| Week 3: 4/8 - 4/14  |   Jacob / Maor       |     Begin integration of Cameras and OpenCV into Pi. Achieve ability for system to identify the circles of cups rims. / Achieve full control of the launcher and write projectile code based on a set distance.               |
+| Week 4: 4/15 - 4/21 |    Jacob / Maor      |     System recognizes if the ball is in the cup or not, sends data via a communication bus to ATMega / Write the feedback algorithim and have the ATMega connect to the Pi               |
+| Week 5: 4/22 - 4/26 |     Jacob/Maor     |   LCD Screen, game mechanics and anything else not yet completed.                 |
 
 ### 12. Proposal Presentation
 
