@@ -99,7 +99,19 @@ If you’ve never made a Github pages website before, you can follow this webpag
 
 ### 2. Images
 
-[Insert final project images here]
+Walkthrough of cup detection
+Original image:
+![Original](/Images/Original.PNG)
+Cropping the image:
+![Original](/Images/Cropped.PNG)
+Convert to HSV image:
+![Original](/Images/HSV.PNG)
+Apply mask filter for red and white:
+![Original](/Images/BothMask.PNG)
+Use canny edge detection algorithm:
+![Original](/Images/Canny.PNG)
+Find closed contours who have large area and draw boxes around them:
+![Original](/Images/Final.PNG)
 
 ### 3. Results
 
