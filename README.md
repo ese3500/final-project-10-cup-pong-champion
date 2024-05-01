@@ -14,10 +14,13 @@ If you’ve never made a Github pages website before, you can follow this webpag
 
 ### 1. Video
 
-[Insert final project video here]
+[Video Link](https://drive.google.com/drive/folders/1A1LMV1IAbxfXXqQC0L0IoUImvHPkrfKY?usp=sharing)
 
 ### 2. Images
-
+![im1](/Images/Im1.PNG)
+![im2](/Images/Im2.PNG)
+![im3](/Images/Im3.PNG)
+![im4](/Images/Im4.PNG)
 Walkthrough of cup detection
 Original image:
 ![Original](/Images/Original.PNG)
@@ -38,11 +41,16 @@ What were your results? Namely, what was the final solution/design to your probl
 
 #### 3.1 Software Requirements Specification (SRS) Results
 
-Based on your quantified system performance, comment on how you achieved or fell short of your expected software requirements. You should be quantifying this, using measurement tools to collect data.
+-Use timers to control DC motor speed (Success!)
+-Use timers to control Servo motor position (Success!)
+-Use C code to control angle / speed of launcher (Success!)
+-Communicate between Pi and Atemga with SPI (Fail)
+-Use OpenCV and Python on Raspberry Pi to determine distance and angle (Success!)
 
 #### 3.2 Hardware Requirements Specification (HRS) Results
 
-Based on your quantified system performance, comment on how you achieved or fell short of your expected hardware requirements. You should be quantifying this, using measurement tools to collect data.
+-Launcher be able to launch over 8 feet (Success!)
+-Launcher over 80 percent of the time lands with an 8 inch diamter circle (Fail) 
 
 ### 4. Conclusion
 
