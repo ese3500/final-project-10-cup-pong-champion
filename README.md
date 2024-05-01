@@ -7,6 +7,61 @@
     * Github Pages Website URL: [for final submission]
     * Description of hardware: MacBook Air, Raspberry Pi, ATMega based board
 
+## Final Project Report
+
+Don't forget to make the GitHub pages public website!
+If you’ve never made a Github pages website before, you can follow this webpage (though, substitute your final project repository for the Github username one in the quickstart guide):  <https://docs.github.com/en/pages/quickstart>
+
+### 1. Video
+
+[Insert final project video here]
+
+### 2. Images
+
+Walkthrough of cup detection
+Original image:
+![Original](/Images/Original.PNG)
+Cropping the image to remove unnecessary information:
+![Original](/Images/Cropped.PNG)
+Convert to HSV image:
+![Original](/Images/HSV.PNG)
+Apply mask filter for red and white:
+![Original](/Images/BothMask.PNG)
+Apply canny edge detection algorithm:
+![Original](/Images/Canny.PNG)
+Find closed contours who have large area and draw boxes around them:
+![Original](/Images/Final.PNG)
+
+### 3. Results
+
+What were your results? Namely, what was the final solution/design to your problem?
+
+#### 3.1 Software Requirements Specification (SRS) Results
+
+Based on your quantified system performance, comment on how you achieved or fell short of your expected software requirements. You should be quantifying this, using measurement tools to collect data.
+
+#### 3.2 Hardware Requirements Specification (HRS) Results
+
+Based on your quantified system performance, comment on how you achieved or fell short of your expected hardware requirements. You should be quantifying this, using measurement tools to collect data.
+
+### 4. Conclusion
+
+Pong is a very difficult game to play. Frat guys spend years constantly practicing to perfect their game. Even so, they still struggle to consistently score due to the high level of precision required. Being the electrical engineers we are, we wanted to find a quicker way to get better at pong, preferably with less beer. This led us to the creation of our 10 Cup Pong Launcher, a device that plays pong on its own.
+
+There are many different aspects of the launcher that need to be created. We needed to create a physical tube that balls can be inserted into to be launched. Two DC motors that can be controlled through PWM to allow for speed control of the balls. Servo motors to control the theta and Phi values of the launch angle. A camera connected to a raspberry pi to determine the location of cups(using OpenCV). SPI communication to allow the raspberry pi to communicate with the ATMega. And finally a mount of some sort for both the launcher and the camera.
+
+This project went well in many ways, but was not as successful as we hoped. Of the specifications outlined above, we accomplished all of them other than SPI and the accuracy of the launcher. Even so, we had many issues with our implementation and demonstration of our project. Coming into demo day, we spent most of our time working on our raspberry pi code and all of our mechanical requirements. These both proved to be way harder than expected, leaving us with less time to make sure our other aspects worked as expected. We were able to finish our python code, it identified all the cups 85 percent of the time. It struggled when there were a lot of cups bunched together and then one cup in front. However, most of the issues with the Python code would be the necessity to fine tune the mask. Mechanically, we struggled to mount the launcher onto the servo, so we decided to remove the second servo to control the z angle control. Our main issue was the inconsistency of the launching system. Even while running at a consistent speed and angle, the balls would launch to fairly different positions. All of these problems have led to subpar execution, even with most of our peripherals acting as expected. Furthermore, we had many other significant inconveniences, such as the raspberry pi crashing repeatedly and not turning on again and us needing to retrieve new ones. 
+
+We learned a lot about the difficulties with highly integrated projects. This project used both a unknwon controller (the Pi), an unknown library (OpenCV), and a difficult mechanical task ontop of the already difficult embedded systems. We spent a LOT of time on this project and the results were still subpar.
+
+We did have successess however. We suceeded to use frequency timer adjustments to adjust the servo positioning. We succeeded to use PWM duty cycle to control the speed of two DC motors. We did build a decently functioning launcher mechanically, with a cool 3D print and some woodwork. We were able to use a Rasberry Pi to identify red solo cups.
+
+We are proud of all of the accomplishments above. Particularly, the Rasberry Pi as the only experience any of us had with that coming in was Jacob who had not used one since 8th grade.
+
+If we were to have changed our approach, we would have simplified the launcher design and given us something easier to work out of. Additionally, we migh have avoided the rasberry pi and used the image recoginition from a laptop and through UART.
+
+The next step of the project would be to redesign the launcher mechanical design one more time, after all we have learned.
+
 ## Final Project Proposal
 
 ### 1. Abstract
@@ -88,50 +143,7 @@ This section is to help guide your progress over the next few weeks. Feel free t
 
 Add your slides to the Final Project Proposal slide deck in the Google Drive.
 
-## Final Project Report
 
-Don't forget to make the GitHub pages public website!
-If you’ve never made a Github pages website before, you can follow this webpage (though, substitute your final project repository for the Github username one in the quickstart guide):  <https://docs.github.com/en/pages/quickstart>
-
-### 1. Video
-
-[Insert final project video here]
-
-### 2. Images
-
-Walkthrough of cup detection
-Original image:
-![Original](/Images/Original.PNG)
-Cropping the image:
-![Original](/Images/Cropped.PNG)
-Convert to HSV image:
-![Original](/Images/HSV.PNG)
-Apply mask filter for red and white:
-![Original](/Images/BothMask.PNG)
-Use canny edge detection algorithm:
-![Original](/Images/Canny.PNG)
-Find closed contours who have large area and draw boxes around them:
-![Original](/Images/Final.PNG)
-
-### 3. Results
-
-What were your results? Namely, what was the final solution/design to your problem?
-
-#### 3.1 Software Requirements Specification (SRS) Results
-
-Based on your quantified system performance, comment on how you achieved or fell short of your expected software requirements. You should be quantifying this, using measurement tools to collect data.
-
-#### 3.2 Hardware Requirements Specification (HRS) Results
-
-Based on your quantified system performance, comment on how you achieved or fell short of your expected hardware requirements. You should be quantifying this, using measurement tools to collect data.
-
-### 4. Conclusion
-
-Reflect on your project. Some questions to consider: What did you learn from it? What went well? What accomplishments are you proud of? What did you learn/gain from this experience? Did you have to change your approach? What could have been done differently? Did you encounter obstacles that you didn’t anticipate? What could be a next step for this project?
-
-## References
-
-Fill in your references here as you work on your proposal and final submission. Describe any libraries used here.
 
 ## Github Repo Submission Resources
 
